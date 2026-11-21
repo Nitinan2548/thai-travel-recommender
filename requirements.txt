@@ -1,0 +1,8 @@
+streamlit
+pandas
+scikit-learn
+pythainlp
+folium
+streamlit-folium
+requests
+python-dotenv
