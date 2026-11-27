@@ -35,6 +35,16 @@ def get_image_for_row(row):
         source = str(row.get("image_source", "") or "").strip() or url
         return url, credit, source
 
+    # พาธรูปในเครื่อง เช่น photos/doi.jpg (อิงจากโฟลเดอร์ของ images.py)
+    if url:
+        p = Path(url)
+        if not p.is_absolute():
+            p = Path(__file__).resolve().parent / url
+        if p.exists():
+            credit = str(row.get("image_credit", "") or "").strip() or "รูปที่เพิ่มเอง"
+            source = str(row.get("image_source", "") or "").strip() or None
+            return str(p), credit, source
+
     local = _local_image(str(row.get("name", "")).strip())
     if local:
         return local, "รูปที่เพิ่มเอง", None
