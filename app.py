@@ -251,7 +251,7 @@ div[data-testid="stExpander"] {
     margin-bottom: 0.9rem; overflow: hidden; transition: box-shadow .2s;}
 div[data-testid="stExpander"]:hover {box-shadow: 0 8px 24px rgba(14,124,134,0.20);}
 div[data-testid="stExpander"] summary {font-weight: 600; font-size: 1.02rem;}
-div[data-testid="stImage"] img {border-radius: 14px; width: 100%; max-height: 260px; object-fit: cover;}
+div[data-testid="stImage"] img {border-radius: 14px; width: 100%; max-height: 420px; object-fit: cover;}
 .tag {display: inline-block; padding: 0.2rem 0.8rem; border-radius: 999px;
     font-size: 0.85rem; font-weight: 600; margin-right: 0.4rem;}
 .tag-cat {background: #DFF1F3; color: #0B5F68;}
